@@ -35,10 +35,13 @@ class Board
         s3 = String.new("       #{self.board.keys[6]} | #{self.board.keys[7]} | #{self.board.keys[8]}"+"\n")
         s1+"\n"+s2+"\n"+s3
     end 
+
+    def mark_board(num, char)
+        board[num] = char
+    end
+
 end 
 
-bord = Board.new()
 
-puts bord.example_board
 
 
